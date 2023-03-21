@@ -3,10 +3,7 @@ function calculateMinCost() {
    var firstinput=document.querySelector("input").value;
       var arr=firstinput.split(",");
 
-      arr.sort(function (a, b) 
-      {
-      return a - b;
-      });
+      arr.sort();
 
     var cost=0;
     while(arr.length>1)
@@ -16,16 +13,11 @@ function calculateMinCost() {
         arr.push(result);
         cost+=result;
 
-        arr.sort(function(a,b)
-        {
-          return a-b;
-        });
+        arr.sort();
     }
-
-
     let result1 = document.getElementById("result");	
     result1.textContent=cost
-    result1.classList.add("div");
+    
   
   
 }  

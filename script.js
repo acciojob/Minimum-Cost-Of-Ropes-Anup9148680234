@@ -12,11 +12,10 @@ function calculateMinCost() {
         arr.splice(0,2);
         arr.push(result);
         cost+=result;
-
         arr.sort();
     }
     let result1 = document.getElementById("result");	
-    result1.textContent=cost
+    result1.textContent=cost;
     
   
   
